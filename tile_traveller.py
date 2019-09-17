@@ -1,1 +1,2 @@
 print('Bang')
+print("bong")
