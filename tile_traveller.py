@@ -1,4 +1,8 @@
 def location(x, y):
+	"""
+	This function prints out the directions you can take and tells you if it's an invalid direction.
+	Then it returns the players decision.
+	"""
 	if (x == 1 and y == 1) or (x == 2 and y == 1):
 		print("You can travel: (N)orth.")
 		answer = input("Direction: ")
@@ -61,6 +65,9 @@ def location(x, y):
 
 	
 def movement(answer, matrix1, matrix2):
+	"""
+	This function takes the input from the function location() and then proceeds to change the players location.
+	"""
 	if answer == "n" or answer == "N":
 		return matrix1, matrix2+1
 
@@ -78,7 +85,10 @@ pos1 = 1
 pos2 = 1
 
 while pos1 and pos2:
-	
+	"""
+	This while loop constantly checks if the player has reached the goal.
+	If not it continous to give the player possible directions.
+	"""
 	direction = location(pos1, pos2)
 	
 	pos1, pos2 = movement(direction, pos1, pos2)
