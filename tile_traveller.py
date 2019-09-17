@@ -1,10 +1,26 @@
 def location(x, y):
+	if (x == 1 and y == 1) or (x == 2 and y == 1):
+		print("You can travel: (N)orth.")
+		answer = input("Direction: ")
+	if (x == 1 and y == 2):
+		print("You can travel: (N)orth or (E)ast or (S)outh.")
+	if (x == 2 and y == 2) or (x == 3 and y == 3):
+		print("You can travel: (S)outh or (W)est.")
+	if (x == 1 and y == 3):
+		print("You can travel: (S)outh or (E)ast.")
+	if (x== 2 and y === 3):
+		print("You can travel: (E)ast or (W)est.")
+	if (x == 3 and y == 2):
+		print("You can travel: (N)orth or (S)outh.")
+	if (x == 3 and y == 1):
+		print("Victory")
+	return(x, y)
 	
-	for i, r in range(1,4):
-		print(i,r)
+	
+	
 	
 
-def moveMent(answer, matrix1, matrix2):
+def movement(answer, matrix1, matrix2):
 	if answer == n or answer == N:
 		return matrix1
 		return matrix2+1
