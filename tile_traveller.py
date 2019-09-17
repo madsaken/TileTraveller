@@ -30,7 +30,7 @@ def location(x, y):
 			answer = input("Direction: ")
 		
 	if (x == 1 and y == 3):
-		print("You can travel: (S)outh or (E)ast.")
+		print("You can travel: (E)ast or (S)outh.")
 		answer = input("Direction: ")
 		while answer:
 			if answer == "s" or answer == "S" or answer == "e" or answer == "E":
