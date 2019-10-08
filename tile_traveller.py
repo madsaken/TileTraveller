@@ -26,7 +26,7 @@ def location(x, y, z, s):
 				
 	if (x == 1 and y == 2):
 		print("Pull a lever (y/n): ")
-		lever = answer = choice(levans)
+		lever = choice(levans)
 		if lever == 'y':
 			coins += 1
 			print("You received 1 coin, your total is now {}.".format(coins))
@@ -45,7 +45,7 @@ def location(x, y, z, s):
 	if (x == 2 and y == 2) or (x == 3 and y == 3):
 		if (x == 2 and y == 2):
 			print("Pull a lever (y/n): ")
-			lever = answer = choice(levans)
+			lever = choice(levans)
 			if lever == 'y':
 				coins += 1
 				print("You received 1 coin, your total is now {}.".format(coins))
@@ -75,7 +75,7 @@ def location(x, y, z, s):
 
 	if (x == 2 and y == 3):
 		print("Pull a lever (y/n): ")
-		lever = answer = choice(levans)
+		lever = choice(levans)
 		if lever == 'y':
 			coins += 1
 			print("You received 1 coin, your total is now {}.".format(coins))
@@ -93,7 +93,7 @@ def location(x, y, z, s):
 
 	if (x == 3 and y == 2):
 		print("Pull a lever (y/n): ")
-		lever = answer = choice(levans)
+		lever = choice(levans)
 		if lever == 'y':
 			coins += 1
 			print("You received 1 coin, your total is now {}.".format(coins))
