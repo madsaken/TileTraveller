@@ -12,6 +12,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (N)orth.")
 			answer = input("Direction: ")
 				
 	if (x == 1 and y == 2):
@@ -26,6 +27,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (N)orth or (E)ast or (S)outh.")
 			answer = input("Direction: ")
 
 	if (x == 2 and y == 2) or (x == 3 and y == 3):
@@ -41,6 +43,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (S)outh or (W)est.")
 			answer = input("Direction: ")
 		
 	if (x == 1 and y == 3):
@@ -51,6 +54,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (E)ast or (S)outh.")
 			answer = input("Direction: ")
 
 	if (x == 2 and y == 3):
@@ -65,6 +69,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (E)ast or (W)est.")
 			answer = input("Direction: ")
 
 	if (x == 3 and y == 2):
@@ -79,6 +84,7 @@ def location(x, y, z):
 				return answer, coins
 			else:
 				print("Not a valid direction!")
+				print("You can travel: (N)orth or (S)outh.")
 			answer = input("Direction: ")
 
 	
