@@ -104,20 +104,26 @@ def movement(answer, matrix1, matrix2):
 	elif answer == "e" or answer == "E":
 		return matrix1+1, matrix2
 
-pos1 = 1
-pos2 = 1
-totalcoins = 0
-while pos1 and pos2:
-	"""
-	This while loop constantly checks if the player has reached the goal.
-	If not it continous to give the player possible directions.
-	"""
-	direction, totalcoins = location(pos1, pos2, totalcoins)
 	
-	pos1, pos2 = movement(direction, pos1, pos2)
-
-	if pos1 == 3 and pos2 == 1:
-		print("Victory! Total coins {}.".format(totalcoins))
+while True:	
+	pos1 = 1
+	pos2 = 1
+	totalcoins = 0
+	while pos1 and pos2:
+		"""
+		This while loop constantly checks if the player has reached the goal.
+		If not it continous to give the player possible directions.
+		"""
+		direction, totalcoins = location(pos1, pos2, totalcoins)
+		
+		pos1, pos2 = movement(direction, pos1, pos2)
+	
+		if pos1 == 3 and pos2 == 1:
+			print("Victory! Total coins {}.".format(totalcoins))
+			break
+	play_again = input("Play again (y/n): ")
+			
+	if play_again == "n":
 		break
 
 
