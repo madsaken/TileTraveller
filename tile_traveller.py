@@ -26,6 +26,8 @@ def location(x, y, z, v):
 			print("Direction: {}".format(answer))
 				
 	if (x == 1 and y == 2):
+		print("Pull a lever (y/n): ")
+		lever = choice(levans)
 		lever = random.choice(levans)
 		print("Pull a lever (y/n): {}".format(lever))
 		if lever == 'y':
@@ -47,6 +49,8 @@ def location(x, y, z, v):
 
 	if (x == 2 and y == 2) or (x == 3 and y == 3):
 		if (x == 2 and y == 2):
+			print("Pull a lever (y/n): ")
+			lever = choice(levans)
 			lever = random.choice(levans)
 			print("Pull a lever (y/n): {}".format(lever))
 			if lever == 'y':
@@ -82,6 +86,8 @@ def location(x, y, z, v):
 			print("Direction: {}".format(answer))
 
 	if (x == 2 and y == 3):
+		print("Pull a lever (y/n): ")
+		lever = choice(levans)
 		lever = random.choice(levans)
 		print("Pull a lever (y/n): {}".format(lever))
 		if lever == 'y':
@@ -102,6 +108,8 @@ def location(x, y, z, v):
 			print("Direction: {}".format(answer))
 
 	if (x == 3 and y == 2):
+		print("Pull a lever (y/n): ")
+		lever = choice(levans)
 		lever = random.choice(levans)
 		print("Pull a lever (y/n): {}".format(lever))
 		if lever == 'y':
